@@ -7,7 +7,7 @@
   .bubbles-wrapper  .ant-space {
     position: absolute;
   }
-  .bubbles-wrapper div:not(.ant-space) {
+  .bubbles-wrapper div {
     height: 100px;
     width: 100px;
     border: 2px solid rgba(153, 153, 153, 0.7);
@@ -26,7 +26,7 @@
     top: 20%;
     right: 20%;
   }
-  .bubbles-wrapper div:nth-child(1) :not(.ant-space){
+  .bubbles-wrapper div:nth-child(1) {
     top: 20%;
     left: 20%;
     animation: animate 8s linear infinite;
