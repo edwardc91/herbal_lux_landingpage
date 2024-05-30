@@ -5,6 +5,9 @@ import "./globals.css";
 
 import Bubbles from "@app/components/Bubbles";
 
+
+import '@app/i18n';
+
 export default function Template({
   children,
 }: Readonly<{
