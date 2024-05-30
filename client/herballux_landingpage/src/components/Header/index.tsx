@@ -14,13 +14,12 @@ export default function Header({}) {
   const { t } = useTranslation("common");
 
   return (
-    <>
       <Space
         direction="vertical"
         size="large"
-        className="ant-space-full-width ant-space-children-full-width"
+        className="ant-space-full-width ant-space-children-full-width ant-space-children-transparent transparent"
         align="center"
-        style={{ height: "100vh", overflow: "auto", position: "absolute", zIndex: 3000 }}
+        style={{ overflow: "auto", zIndex: 3000 }}
       >
         <Space
           className="ant-space-full-width"
@@ -35,53 +34,5 @@ export default function Header({}) {
           <Title level={md ? 2 : 5} style={{color: "black"}}>Welcome to Herbal Lux where every soap is a masterpiece of nature's goodness!</Title>
         </Space>
       </Space>
-      <div className="bubbles-wrapper">
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-        <div>
-          <span className="dot"></span>
-        </div>
-      </div>
-    </>
   );
 }

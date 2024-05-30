@@ -2,10 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-image:url("");
+  background-attachment: fixed;
+}
+
+body:after{
+  top:0; 
+  left:0;
+  z-index:-1;
+  content: "";
+  display: block;
+  background-attachment: fixed;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #fafafa, 5%, #b0f17e, 50%, #07ff1c);
+}
+
 .ant-space-full-width {
   width: 100% !important;
 }
 
+.trasparent {
+  background-color: transparent !important;
+}
+
 .ant-space-children-full-width>.ant-space-item {
   width: 100% !important;
+}
+
+.ant-space-children-transparent>.ant-space-item {
+  background-color: transparent !important;
 }
