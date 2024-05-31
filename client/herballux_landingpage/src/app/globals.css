@@ -7,6 +7,10 @@ body{
   background-attachment: fixed;
 }
 
+#general-container {
+  margin: 0 10%
+}
+
 body:after{
   top:0; 
   left:0;

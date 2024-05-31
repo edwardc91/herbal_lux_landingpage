@@ -1,12 +1,9 @@
 import { Suspense } from "react";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Bubbles from "@app/components/Bubbles";
 
-
-import '@app/i18n';
+import "@app/i18n";
 
 export default function Template({
   children,
@@ -16,7 +13,7 @@ export default function Template({
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Bubbles />
-      {children}
+      <div id="general-container">{children}</div>
     </Suspense>
   );
 }
